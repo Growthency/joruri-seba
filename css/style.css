@@ -6,7 +6,7 @@
     --history-bg: #f8fafc;
     --text-dark: #1e293b;
     --text-light: #f1f5f9;
-    border-color: #e5e7eb;
+    --border-color: #e5e7eb;
 }
 
 * {
@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Hind Siliguri', sans-serif;
-    background-color: #f1f5f9;
+    background-color: #F5FFF6;
     color: var(--text-dark);
 }
 
@@ -69,6 +69,10 @@ body {
     gap: 8px;
     font-size: 1.1rem;
     font-weight: 600;
+    background: #ECFFF0;
+    padding: 7px 15px;
+    border-radius: 15px;
+}
 }
 
 .stat-item .icon {
@@ -79,7 +83,7 @@ body {
     background-color: var(--primary-green);
     color: white;
     padding: 8px 15px;
-    border-radius: 8px;
+    border-radius: 15px;
     font-weight: bold;
     border: none;
 }
@@ -106,4 +110,198 @@ body {
 .hero-section .slogan {
     font-size: 1.1rem;
     opacity: 0.9;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+/* Emergency Cards Section */
+.card-container {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.service-icon {
+    width: 32px;
+    height: 32px;
+    background: #FFE3E2;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+
+.heart-icon {
+    font-size: 1.5rem;
+    color: #cbd5e1;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    width: 24px;
+    height: 24px;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+}
+
+.coin-icon:hover {
+    transform: scale(1.2);
+}
+
+img.coin-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.heart-icon.liked {
+    color: #ef4444;
+    /* Red when liked */
+}
+
+.card-info .service-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card-info .service-name-english {
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.card-info .hotline-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    margin-bottom: 10px;
+}
+
+.category-badge {
+    background-color: #e0f2fe;
+    color: #0ea5e9;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.copy-button:hover {
+    background-color: #f1f5f9;
+}
+
+.call-button {
+    background-color: #16a34a;
+    color: white;
+    border-color: #e5e7eb;
+}
+
+.call-button:hover {
+    background-color: #22bb5a;
+}
+
+/* History Section */
+.history-container {
+    flex: 1;
+    /* Takes 1/4 of the space */
+    background-color: var(--history-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.history-header h3 {
+    font-size: 1.2rem;
+}
+
+#clear-history-button {
+    background-color: #00A63E;
+    color: #ffffff;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-item {
+    background-color: var(--card-bg);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-item-info .name {
+    font-weight: 600;
+}
+
+.history-item-info .number {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.history-item .time {
+    font-size: 0.8rem;
+    color: #94a3b8;
 }
