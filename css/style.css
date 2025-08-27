@@ -1,14 +1,4 @@
 /* General Styles */
-:root {
-    --primary-green: #22c55e;
-    --dark-green-bg: linear-gradient(120deg, #15803d, #166534);
-    --card-bg: #ffffff;
-    --history-bg: #f8fafc;
-    --text-dark: #1e293b;
-    --text-light: #f1f5f9;
-    --border-color: #e5e7eb;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +8,7 @@
 body {
     font-family: 'Hind Siliguri', sans-serif;
     background-color: #F5FFF6;
-    color: var(--text-dark);
+    color: #1e293b;
 }
 
 /* Main Container */
@@ -30,9 +20,9 @@ body {
 
 /* Navbar Section */
 .navbar {
-    background-color: var(--card-bg);
+    background-color: #ffffff;
     padding: 15px 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid #e5e7eb;
 }
 
 .navbar-content {
@@ -76,11 +66,11 @@ body {
 }
 
 .stat-item .icon {
-    color: var(--primary-green);
+    color: #22c55e;
 }
 
 #copy-button {
-    background-color: var(--primary-green);
+    background-color: #22c55e;
     color: white;
     padding: 8px 15px;
     border-radius: 15px;
@@ -90,8 +80,8 @@ body {
 
 /* Hero Section */
 .hero-section {
-    background: var(--dark-green-bg);
-    color: var(--text-light);
+    background: linear-gradient(120deg, #15803d, #166534);
+    color: #f1f5f9;
     text-align: center;
     padding: 40px 20px;
 }
@@ -128,14 +118,22 @@ body {
 }
 
 .service-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-custom {
+    background: #ffffff !important;
+}
+
+.card-custom:hover {
+    background-color: #f1f5f9 !important;
 }
 
 .card-top {
@@ -178,7 +176,6 @@ img.coin-icon {
 
 .heart-icon.liked {
     color: #ef4444;
-    /* Red when liked */
 }
 
 .card-info .service-name {
@@ -196,7 +193,7 @@ img.coin-icon {
 .card-info .hotline-number {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-green);
+    color: #22c55e;
     margin-bottom: 10px;
 }
 
@@ -247,9 +244,8 @@ img.coin-icon {
 /* History Section */
 .history-container {
     flex: 1;
-    /* Takes 1/4 of the space */
-    background-color: var(--history-bg);
-    border: 1px solid var(--border-color);
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 12px;
     padding: 20px;
     height: fit-content;
@@ -283,10 +279,10 @@ img.coin-icon {
 }
 
 .history-item {
-    background-color: var(--card-bg);
+    background-color: #FAFAFA;
     padding: 12px;
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid #e5e7eb;
     display: flex;
     justify-content: space-between;
     align-items: center;
